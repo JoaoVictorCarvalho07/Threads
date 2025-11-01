@@ -1,4 +1,6 @@
-package br.com.jv;
+package br.com.jv.NM;
+
+import br.com.jv.TarefaBase;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,14 +8,14 @@ import java.util.concurrent.*;
 
 public class NMMain {
     public static void main(String[] args) throws InterruptedException {
-        int N = args.length > 0 ? Integer.parseInt(args[0]) : 10000; // 100 tarefas
-        int M = args.length > 1 ? Integer.parseInt(args[1]) : 8; // 8 threads
+        int N = args.length > 0 ? Integer.parseInt(args[0]) : 1000; // 1000 tarefas
+        int M = args.length > 1 ? Integer.parseInt(args[1]) : 10; // 10 threads
 
         int iteracoes = args.length > 2 ? Integer.parseInt(args[2]) : 5_000_000; // 5 milhoes de iteracoes
 
 
-        //aqui o programa executara apenas o numero fixo de threads = 8
-        ExecutorService executor = Executors.newFixedThreadPool(N);
+        //aqui o programa executara apenas o numero fixo de threads = 10
+        ExecutorService executor = Executors.newFixedThreadPool(M);
 
         List<Future<?>> futures = new ArrayList<>(N);
 

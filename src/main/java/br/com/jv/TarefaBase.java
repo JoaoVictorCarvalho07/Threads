@@ -2,6 +2,7 @@ package br.com.jv;
 
 public class TarefaBase implements Runnable {
     private final int numIteracoes;
+    public static volatile long  uso;
 
     public TarefaBase(int numIteracoes) {
         this.numIteracoes = numIteracoes;
@@ -23,6 +24,7 @@ public class TarefaBase implements Runnable {
 
         // if apenas para o
         if (acum == 124435) System.out.print("");
+        uso = acum;
 
     }
 }
