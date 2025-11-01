@@ -6,10 +6,10 @@ import java.util.concurrent.*;
 
 public class NMMain {
     public static void main(String[] args) throws InterruptedException {
-        int N = 100; // 100 tarefas
-        int M = 8; // 8 threads
+        int N = args.length > 0 ? Integer.parseInt(args[0]) : 10000; // 100 tarefas
+        int M = args.length > 1 ? Integer.parseInt(args[1]) : 8; // 8 threads
 
-        int iteracoes = 5000000; // 5 milhoes de iteracoes
+        int iteracoes = args.length > 2 ? Integer.parseInt(args[2]) : 5_000_000; // 5 milhoes de iteracoes
 
 
         //aqui o programa executara apenas o numero fixo de threads = 8
