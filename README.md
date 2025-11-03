@@ -226,13 +226,41 @@ java -cp target\classes br.com.jv.oto.OtoMain 1000 5000000
 
 ---
 
-## Gráfico
+## Prints das execuções
 
-- Gráfico de linhas: **X = N** (tarefas/threads), **Y = tempo (ms)**.
-- Séries: **N:M (melhor M)** vs **1:1**.
-- Pode exportar do Excel/Planilhas para `results/grafico.png` e referenciar aqui.
+### Prints das execuções (exemplo)
+---
+Figura 1 — NM: N=1000, M=10
+
+![NM — N=1000, M=10](prints%20execução%20do%20programa/NM_1000N_10M.png)
 
 ---
+Figura 2 — NM: N=1000, M=100
+
+![NM — N=1000, M=100](prints%20execução%20do%20programa/NM_1000N_100M.png)
+
+---
+Figura 3 — NM: N=1000, M=500
+
+![NM — N=1000, M=500](prints%20execução%20do%20programa/NM_1000N_500M.png)
+
+---
+Figura 4 — NM: N=1000, M=1000
+
+![NM — N=1000, M=1000](prints%20execução%20do%20programa/NM_1000N_1000M.png)
+
+---
+Figura 5 — 1:1 (OtO): N=1000
+
+![OtO — N=1000](prints%20execução%20do%20programa/OtO_1000M.png)
+
+---
+Figura 6 — 1:1 (OtO): N=10000
+
+![OtO — N=10000](prints%20execução%20do%20programa/OtO_10000M.png)
+
+---
+
 
 ## Análise
 
